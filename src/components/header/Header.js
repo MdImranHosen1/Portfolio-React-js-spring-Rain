@@ -115,7 +115,7 @@ export const Header = () => {
             {!smallNav && (
                 <header id="flex-container-head-large" className="navbar-style">
                     <div>
-                        <Link to="index.html">
+                        <Link to="Portfolio-React-js-spring-Rain/">
                             <img height="30px" src={logo} alt="Homepage" />
                         </Link>
                     </div>
