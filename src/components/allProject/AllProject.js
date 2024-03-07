@@ -1,5 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { OtherSingleProject } from './OtherProjectSingle';
+import './project.css'
+// images
 import firstproject from '../../assets/images/firstproject.jpg'
 import secondproject from '../../assets/images/secondproject.jpg'
 import githublogo from '../../assets/images/githublogo.png';
@@ -9,14 +12,26 @@ import maps from '../../assets/images/maps.png';
 import calculator from '../../assets/images/calculator.png';
 import videocallingapp from '../../assets/images/videocallingapp.png';
 import viewmore from '../../assets/images/viewmore.png';
-
-import { OtherSingleProject } from './OtherProjectSingle';
-
+import viewless from '../../assets/images/viewless.png'
+// images
 
 
 
 
 export const AllProject = () => {
+
+    const [show, setShow] = useState(false);
+
+    function toggleMoreProject() {
+
+        console.log("asdfadsf");
+        if (show) {
+            setShow(false);
+        }
+        else {
+            setShow(true);
+        }
+    }
     return (
         <div id="project" className="project-style">
             {/* <!-- Featured Project start --> */}
@@ -24,7 +39,7 @@ export const AllProject = () => {
                 <div><h1>Featured Project</h1></div>
                 <section className="flex-container-project">
                     <figure>
-                        <img src={firstproject} alt=''/>
+                        <img src={firstproject} alt='' />
                     </figure>
                     <div className="features-project-text">
                         <div>
@@ -44,8 +59,8 @@ export const AllProject = () => {
                             </div>
                         </div>
                         <div>
-                            <img src={githublogo} alt=''/>
-                            <Link href="#"><img src={externallink} alt=''/> </Link>
+                            <img src={githublogo} alt='' />
+                            <Link href="#"><img src={externallink} alt='' /> </Link>
                         </div>
                     </div>
                 </section>
@@ -68,37 +83,36 @@ export const AllProject = () => {
                             </div>
                         </div>
                         <div>
-                            <img src={githublogo} alt=''/>
-                            <Link href="#"><img src={externallink} alt=''/> </Link>
+                            <img src={githublogo} alt='' />
+                            <Link href="#"><img src={externallink} alt='' /> </Link>
                         </div>
                     </div>
                     <figure>
-                        <img src={secondproject} alt=''/>
+                        <img src={secondproject} alt='' />
                     </figure>
                 </section>
             </div>
             {/* <!-- Featured Project end --> */}
 
             {/* <!-- Other Project start --> */}
-            {/* <div id="other-project-main-div"> */}
-            <div >
+            {show && <div >
                 <div><h1>Other Project</h1></div>
 
                 <div className="flex-container-other-project" alt=''>
                     <div Style="margin-right: 10px">
-                        <OtherSingleProject projectImage={instagram}/>
-                        <OtherSingleProject projectImage={maps}/>
+                        <OtherSingleProject projectImage={instagram} />
+                        <OtherSingleProject projectImage={maps} />
                     </div>
                     <div>
-                        <OtherSingleProject projectImage={calculator}/>
-                        <OtherSingleProject projectImage={videocallingapp}/>
+                        <OtherSingleProject projectImage={calculator} />
+                        <OtherSingleProject projectImage={videocallingapp} />
                     </div>
                 </div>
-            </div>
+            </div>}
             <div id="project-viewmore-button">
-                <span onclick="toggleVisibilityOtherProject()">
-                    <img id="other-project-seemore-img" src={viewmore} alt=''/>
-                    <div id="other-project-seemore-text">See More</div></span
+                <span onClick={toggleMoreProject}>
+                    <img id="other-project-seemore-img" src={show?viewless:viewmore} alt='' />
+                    <div id="other-project-seemore-text">{show?"See less":"See more"}</div></span
                 >
             </div>
             {/* <!-- Other Project end --> */}

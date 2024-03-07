@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import './contact.css'
 export const Contact = () => {
   return (
     <div id="contact" className="contact-style">

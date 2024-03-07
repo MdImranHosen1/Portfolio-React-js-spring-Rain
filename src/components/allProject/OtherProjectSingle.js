@@ -2,7 +2,7 @@ import React from 'react'
 import githublogo from '../../assets/images/githublogo.png';
 import externallink from '../../assets/images/externallink.png';
 import { Link } from 'react-router-dom';
-
+import './project.css'
 export const OtherSingleProject = (props) => {
     return (
         <div>

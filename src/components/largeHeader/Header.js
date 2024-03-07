@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/images/house.png'
 import previous from '../../assets/images/previous.png'
-import './header.css'
+import  './header.css'
 
 export const Header = () => {
   return (

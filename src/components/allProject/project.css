@@ -1,0 +1,213 @@
+
+
+/* All page title style start */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+
+
+/* Project start */
+
+.project-style {
+    background-color: #e6e6e6;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.flex-container-project {
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+    height: auto;
+}
+
+.flex-container-project>figure  {
+    flex: 50%;
+    border-radius: 10px;
+}
+
+.flex-container-project>div  {
+    flex: 50%;
+    border-radius: 10px;
+}
+.flex-container-project>figure>img  {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+/* Freatured project start*/
+.featured-project-main-div {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.freatured-project-style {
+    margin-bottom: 80px;
+}
+
+.flex-container-featured-project article {
+    margin: 5px;
+    justify-content: center;
+}
+
+.flex-container-featured-project figure {
+    margin: 5px;
+    border-radius: 10px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.flex-container-featured-project figure img {
+    width: 100%;
+}
+
+.features-project-text {
+    margin: 10px;
+}
+
+.features-project-text h3 {
+    margin-bottom: 10px;
+}
+
+.features-project-text p {
+    margin-bottom: 10px;
+
+}
+
+.features-project-text>div>div>span {
+
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 600;
+
+}
+
+.features-project-text div img {
+    width: 15px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+/* Freatured project end*/
+
+
+/* other project start */
+
+.flex-container-other-project {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.flex-container-other-project > div > div {
+    display: flex;
+    width: 100%; 
+}
+
+.flex-container-other-project > div > div > figure {
+    margin-right: 5px;
+    flex: 40%;
+    margin-bottom: 20px;
+}
+
+.flex-container-other-project > div > div > div {
+    flex: 60%;
+}
+
+.flex-container-other-project > div > div > figure > img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+
+
+.flex-container-other-project>div>div>div>div>h3 {
+    margin-bottom: 10px;
+    margin-top: 8px;
+
+}
+
+.flex-container-other-project>div>div>div>div>div>span{
+    margin-left: 2px;
+    margin-right: 2px;
+    font-weight: 600;
+    font-size: small;
+    
+}
+
+.flex-container-other-project>div>div>div>div>div{
+    margin-top: 5px;
+}
+.flex-container-other-project>div>div>div>div {
+    margin-bottom: 15px;
+}
+
+.flex-container-other-project>div>div>div>div >img{
+   
+    height: 15px;
+    width: 15px;
+
+}
+.flex-container-other-project>div>div>div>div >a>img{
+   
+    height: 15px;
+    width: 15px;
+
+}
+/* other project end */
+/* view more */
+#project-viewmore-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+    
+}
+#project-viewmore-button>span{
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+    display: flex;
+    cursor: pointer; 
+    background-color: rgb(245, 245, 245);
+    border: 1.5px solid rgb(193, 186, 186);
+    border-radius: 10px;
+    width: auto;
+    
+}
+
+#project-viewmore-button>span>img{
+    width: 30px;
+    align-items: center;
+    justify-items: center;
+    margin-left: 8px;
+    margin-right: 6px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#project-viewmore-button>span>div{
+   
+    align-items: center;
+    justify-items: center;
+    margin-right: 8px;
+    font-weight:500;
+    
+}
+/* view more end */
+
+/* project end */
