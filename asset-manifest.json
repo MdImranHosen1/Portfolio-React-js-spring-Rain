@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/github.io/Portfolio-React.js-spring-Rain/static/css/main.cd47d9fe.css",
-    "main.js": "/github.io/Portfolio-React.js-spring-Rain/static/js/main.dea237f9.js",
-    "static/media/firstproject.jpg": "/github.io/Portfolio-React.js-spring-Rain/static/media/firstproject.c62ac18b103b27f3005d.jpg",
-    "static/media/secondproject.jpg": "/github.io/Portfolio-React.js-spring-Rain/static/media/secondproject.d1e8ecf2dfab429a7305.jpg",
-    "static/media/imran.jpg": "/github.io/Portfolio-React.js-spring-Rain/static/media/imran.8425b063730573200b7c.jpg",
-    "static/media/videocallingapp.png": "/github.io/Portfolio-React.js-spring-Rain/static/media/videocallingapp.58823a3a601b533184e6.png",
-    "static/media/maps.png": "/github.io/Portfolio-React.js-spring-Rain/static/media/maps.4504f363d9bc6b4502ab.png",
-    "static/media/calculator.png": "/github.io/Portfolio-React.js-spring-Rain/static/media/calculator.affe28dad37ebce53fde.png",
-    "static/media/instagram.png": "/github.io/Portfolio-React.js-spring-Rain/static/media/instagram.24e05950f8bf10a8fd64.png",
-    "index.html": "/github.io/Portfolio-React.js-spring-Rain/index.html",
-    "main.cd47d9fe.css.map": "/github.io/Portfolio-React.js-spring-Rain/static/css/main.cd47d9fe.css.map",
-    "main.dea237f9.js.map": "/github.io/Portfolio-React.js-spring-Rain/static/js/main.dea237f9.js.map"
+    "main.css": "/github.io/Portfolio-React-js-spring-Rain/static/css/main.cd47d9fe.css",
+    "main.js": "/github.io/Portfolio-React-js-spring-Rain/static/js/main.1d3fb8f4.js",
+    "static/media/firstproject.jpg": "/github.io/Portfolio-React-js-spring-Rain/static/media/firstproject.c62ac18b103b27f3005d.jpg",
+    "static/media/secondproject.jpg": "/github.io/Portfolio-React-js-spring-Rain/static/media/secondproject.d1e8ecf2dfab429a7305.jpg",
+    "static/media/imran.jpg": "/github.io/Portfolio-React-js-spring-Rain/static/media/imran.8425b063730573200b7c.jpg",
+    "static/media/videocallingapp.png": "/github.io/Portfolio-React-js-spring-Rain/static/media/videocallingapp.58823a3a601b533184e6.png",
+    "static/media/maps.png": "/github.io/Portfolio-React-js-spring-Rain/static/media/maps.4504f363d9bc6b4502ab.png",
+    "static/media/calculator.png": "/github.io/Portfolio-React-js-spring-Rain/static/media/calculator.affe28dad37ebce53fde.png",
+    "static/media/instagram.png": "/github.io/Portfolio-React-js-spring-Rain/static/media/instagram.24e05950f8bf10a8fd64.png",
+    "index.html": "/github.io/Portfolio-React-js-spring-Rain/index.html",
+    "main.cd47d9fe.css.map": "/github.io/Portfolio-React-js-spring-Rain/static/css/main.cd47d9fe.css.map",
+    "main.1d3fb8f4.js.map": "/github.io/Portfolio-React-js-spring-Rain/static/js/main.1d3fb8f4.js.map"
   },
   "entrypoints": [
     "static/css/main.cd47d9fe.css",
-    "static/js/main.dea237f9.js"
+    "static/js/main.1d3fb8f4.js"
   ]
 }
