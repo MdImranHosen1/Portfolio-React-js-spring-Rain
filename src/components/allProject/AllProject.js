@@ -8,7 +8,9 @@ import instagram from '../../assets/images/instagram.png';
 import maps from '../../assets/images/maps.png';
 import calculator from '../../assets/images/calculator.png';
 import videocallingapp from '../../assets/images/videocallingapp.png';
-import { OtherSingleProject } from './OtherSingleProject';
+import viewmore from '../../assets/images/viewmore.png';
+
+import { OtherSingleProject } from './OtherProjectSingle';
 
 
 
@@ -42,8 +44,8 @@ export const AllProject = () => {
                             </div>
                         </div>
                         <div>
-                            <img src="./images/githublogo.png" alt=''/>
-                            <Link href="#"><img src="./images/externallink.png" alt=''/> </Link>
+                            <img src={githublogo} alt=''/>
+                            <Link href="#"><img src={externallink} alt=''/> </Link>
                         </div>
                     </div>
                 </section>
@@ -66,8 +68,8 @@ export const AllProject = () => {
                             </div>
                         </div>
                         <div>
-                            <img src="./images/githublogo.png" alt=''/>
-                            <Link href="#"><img src="./images/externallink.png" alt=''/> </Link>
+                            <img src={githublogo} alt=''/>
+                            <Link href="#"><img src={externallink} alt=''/> </Link>
                         </div>
                     </div>
                     <figure>
@@ -95,7 +97,7 @@ export const AllProject = () => {
             </div>
             <div id="project-viewmore-button">
                 <span onclick="toggleVisibilityOtherProject()">
-                    <img id="other-project-seemore-img" src="images/viewmore.png" alt=''/>
+                    <img id="other-project-seemore-img" src={viewmore} alt=''/>
                     <div id="other-project-seemore-text">See More</div></span
                 >
             </div>
