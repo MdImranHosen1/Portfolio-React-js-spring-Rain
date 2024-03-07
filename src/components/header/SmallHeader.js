@@ -1,28 +1,28 @@
-import React, { useState } from 'react'
-import './smallHeader.css'
-import { Link } from 'react-router-dom'
-import logo from '../../assets/images/house.png'
-import menu from '../../assets/images/menu.png'
-import close from '../../assets/images/delete-cross.png'
+import React, { useState } from 'react';
+import './smallHeader.css';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/images/house.png';
+import menu from '../../assets/images/menu.png';
+import close from '../../assets/images/delete-cross.png';
 
 export const SmallHeader = () => {
+    const [show, setShow] = useState(false);
 
-    const [show,setShow]=useState(false);
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            setShow(false); // Hide the menu after clicking on a link
+        }
+    };
 
- 
-    function handleClickMenu() {   
-  
-      if (show) {
-        setShow(false);
-      }
-      else {
-        setShow(true);
-       
-      }
+    function handleClickMenu() {
+        setShow(!show); // Toggle show state
     }
+
     return (
         <>
-            <header style={{ paddingRight:"5px",paddingLeft:"5px"}} id="flex-container-head-large" className="navbar-style">
+            <header style={{ paddingRight: "5px", paddingLeft: "5px" }} id="flex-container-head-large" className="navbar-style">
                 <div>
                     <Link to="index.html">
                         <img height="30px" src={logo} alt="Homepage" />
@@ -30,21 +30,18 @@ export const SmallHeader = () => {
                 </div>
                 <div>
                     <Link onClick={handleClickMenu}>
-                        <img height="30px" src={show?close:menu} alt="Menu" />
+                        <img height="30px" src={show ? close : menu} alt="Menu" />
                     </Link>
                 </div>
             </header>
-        {show && <div className='sm-header'>
-
-            <span>About</span>
-            <span>Experience</span>
-            <span>Project</span>
-            <span>Contact</span>
-            <span>Resume</span>
-            <span>Hire me</span>
-
-        </div>}
+            {show && <div className='sm-header'>
+                <span onClick={() => scrollToSection("about")}>About</span>
+                <span onClick={() => scrollToSection("experience")}>Experience</span>
+                <span onClick={() => scrollToSection("project")}>Project</span>
+                <span onClick={() => scrollToSection("contact")}>Contact</span>
+                <span><Link to="#">Resume</Link></span>
+                <span><Link to="#">Hire me</Link></span>
+            </div>}
         </>
-
-    )
-}
+    );
+};

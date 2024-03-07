@@ -4,7 +4,7 @@ import './introduction.css'
 
 export const Introduction = () => {
   return (
-    <div class="introduction-style">
+    <div className="introduction-style">
       <div id="introduction-name-style">Hi, I'm Imran Hosen</div>
       <div>
         Self-motivated person with analytical thinking and problem-solving
