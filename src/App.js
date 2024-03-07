@@ -1,15 +1,19 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {Header}  from'./components/largeHeader/Header'
+import { BrowserRouter, Routes } from "react-router-dom";
 import { Introduction } from './components/introduction/Introduction';
 import { About } from './components/about/About';
 import { Experience } from './components/experience/Experience';
 import { AllProject } from './components/allProject/AllProject';
 import { Contact } from './components/contact/Contact';
+import { Header } from './components/header/Header';
+
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      
+
       <Header></Header>
       <Introduction></Introduction>
       <About></About>
