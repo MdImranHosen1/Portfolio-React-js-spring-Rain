@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/github.io/Portfolio-React-js-spring-Rain/static/css/main.cd47d9fe.css",
-    "main.js": "/github.io/Portfolio-React-js-spring-Rain/static/js/main.1d3fb8f4.js",
+    "main.js": "/github.io/Portfolio-React-js-spring-Rain/static/js/main.dd8bf486.js",
     "static/media/firstproject.jpg": "/github.io/Portfolio-React-js-spring-Rain/static/media/firstproject.c62ac18b103b27f3005d.jpg",
     "static/media/secondproject.jpg": "/github.io/Portfolio-React-js-spring-Rain/static/media/secondproject.d1e8ecf2dfab429a7305.jpg",
     "static/media/imran.jpg": "/github.io/Portfolio-React-js-spring-Rain/static/media/imran.8425b063730573200b7c.jpg",
@@ -11,10 +11,10 @@
     "static/media/instagram.png": "/github.io/Portfolio-React-js-spring-Rain/static/media/instagram.24e05950f8bf10a8fd64.png",
     "index.html": "/github.io/Portfolio-React-js-spring-Rain/index.html",
     "main.cd47d9fe.css.map": "/github.io/Portfolio-React-js-spring-Rain/static/css/main.cd47d9fe.css.map",
-    "main.1d3fb8f4.js.map": "/github.io/Portfolio-React-js-spring-Rain/static/js/main.1d3fb8f4.js.map"
+    "main.dd8bf486.js.map": "/github.io/Portfolio-React-js-spring-Rain/static/js/main.dd8bf486.js.map"
   },
   "entrypoints": [
     "static/css/main.cd47d9fe.css",
-    "static/js/main.1d3fb8f4.js"
+    "static/js/main.dd8bf486.js"
   ]
 }
