@@ -15,6 +15,7 @@ import viewmore from '../../assets/images/viewmore.png';
 import viewless from '../../assets/images/viewless.png'
 // images
 
+let skills = ["Html", "CSS", "JS", "Java", "C++"];
 
 
 
@@ -51,11 +52,10 @@ export const AllProject = () => {
                             </p>
                             <hr />
                             <div>
-                                <span>Html</span>
-                                <span>CSS</span>
-                                <span>JS</span>
-                                <span>CSS</span>
-                                <span>JS</span>
+                                {skills.map(value => {
+                                    return <span>{value} </span>
+                                })}
+
                             </div>
                         </div>
                         <div>
@@ -75,11 +75,9 @@ export const AllProject = () => {
                             </p>
                             <hr />
                             <div>
-                                <span>Html</span>
-                                <span>CSS</span>
-                                <span>JS</span>
-                                <span>CSS</span>
-                                <span>JS</span>
+                                {skills.map(value => {
+                                    return <span>{value} </span>
+                                })}
                             </div>
                         </div>
                         <div>
@@ -100,19 +98,19 @@ export const AllProject = () => {
 
                 <div className="flex-container-other-project" alt=''>
                     <div Style="margin-right: 10px">
-                        <OtherSingleProject projectImage={instagram} />
-                        <OtherSingleProject projectImage={maps} />
+                        <OtherSingleProject projectImage={instagram} skills={skills}/>
+                        <OtherSingleProject projectImage={maps} skills={skills}/>
                     </div>
                     <div>
-                        <OtherSingleProject projectImage={calculator} />
-                        <OtherSingleProject projectImage={videocallingapp} />
+                        <OtherSingleProject projectImage={calculator} skills={skills}/>
+                        <OtherSingleProject projectImage={videocallingapp} skills={skills}/>
                     </div>
                 </div>
             </div>}
             <div id="project-viewmore-button">
                 <span onClick={toggleMoreProject}>
-                    <img id="other-project-seemore-img" src={show?viewless:viewmore} alt='' />
-                    <div id="other-project-seemore-text">{show?"See less":"See more"}</div></span
+                    <img id="other-project-seemore-img" src={show ? viewless : viewmore} alt='' />
+                    <div id="other-project-seemore-text">{show ? "See less" : "See more"}</div></span
                 >
             </div>
             {/* <!-- Other Project end --> */}

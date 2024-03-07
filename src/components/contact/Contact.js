@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './contact.css'
 export const Contact = () => {
+
+  const [show, setShow] = useState(false);
+
+  function toggleWriteMessage() {
+
+  
+      if (show) {
+          setShow(false);
+      }
+      else {
+          setShow(true);
+      }
+  }
   return (
     <div id="contact" className="contact-style">
     <div><h1>Contact</h1></div>
@@ -12,7 +25,7 @@ export const Contact = () => {
       suscipit.
     </p>
     <div Style="margin-top: 30px; margin-bottom: 60px">
-      <form className="contact-write-messege-form">
+      {show&& <form className="contact-write-messege-form">
         <label>Messege</label>
         <textarea
           placeholder="Your message."
@@ -34,12 +47,12 @@ export const Contact = () => {
           <option>Japan</option>
           <option>Nepal</option>
         </select>
-      </form>
+      </form>}
 
       <span
-        onclick=" toggleVisibilityContactMessage()"
+        onClick={toggleWriteMessage}
         className="write-messege-button-style"
-        ><a href="#contact" id="contact-write-message">Write Message</a></span
+        ><a href="#contact" id="contact-write-message">{show?"Send message":"Write message"}</a></span
       >
     </div>
     <div Style="margin: 10px">

@@ -18,15 +18,13 @@ export const OtherSingleProject = (props) => {
                     </p>
                     <hr />
                     <div>
-                        <span>Html</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>CSS</span>
-                        <span>JS</span>
+                      {props.skills.map(value => {
+                                    return <span>{value} </span>
+                                })}
                     </div>
                 </div>
                 <div>
-                    <img src={githublogo} alt='' />
+                <img src={githublogo} alt='' style={{marginRight: '5px'}} />
                     <Link to="#"><img src={externallink} alt='' /> </Link>
                 </div>
             </div>
