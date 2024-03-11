@@ -24,6 +24,9 @@ export const About = () => {
     <div id="about" className="about-main-div">
       <div><h1>About Me</h1></div>
       <div className="flex-container-about">
+       <figure>
+          <img src={myself} alt='' />
+        </figure>
         <article>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
@@ -50,9 +53,7 @@ export const About = () => {
             <img id="about_more_button_img" Style=" cursor: pointer; opacity: 80%;" onClick={handleClickAboutMore} width="30px" src={show?viewless:viewmore} alt='' />
           </div>
         </article>
-        <figure>
-          <img src={myself} alt='' />
-        </figure>
+        
       </div>
     </div>
   )

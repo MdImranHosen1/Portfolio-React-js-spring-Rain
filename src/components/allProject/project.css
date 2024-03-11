@@ -1,5 +1,3 @@
-
-
 /* All page title style start */
 
 .flex-container {
@@ -22,6 +20,7 @@
     padding-right: 15%;
 }
 
+
 .flex-container-project {
     display: flex;
     margin-top: 30px;
@@ -29,18 +28,22 @@
     height: auto;
 }
 
-.flex-container-project>figure  {
+
+
+
+.flex-container-project>figure {
     flex: 50%;
     border-radius: 10px;
 }
 
-.flex-container-project>div  {
+.flex-container-project>div {
     flex: 50%;
     border-radius: 10px;
 }
-.flex-container-project>figure>img  {
-    width: 100%; 
-    height: auto; 
+
+.flex-container-project>figure>img {
+    width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -99,7 +102,21 @@
 }
 
 /* Freatured project end*/
+@media only screen and (max-width: 700px) {
+    .flex-container-project {
+        flex-direction: column;
+    }
 
+    .project-style {
+
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .flex-container-other-project {
+        flex-direction: column;
+
+    }
+}
 
 /* other project start */
 
@@ -109,22 +126,22 @@
 
 }
 
-.flex-container-other-project > div > div {
+.flex-container-other-project>div>div {
     display: flex;
-    width: 100%; 
+    width: 100%;
 }
 
-.flex-container-other-project > div > div > figure {
+.flex-container-other-project>div>div>figure {
     margin-right: 5px;
     flex: 40%;
     margin-bottom: 20px;
 }
 
-.flex-container-other-project > div > div > div {
+.flex-container-other-project>div>div>div {
     flex: 60%;
 }
 
-.flex-container-other-project > div > div > figure > img {
+.flex-container-other-project>div>div>figure>img {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -139,75 +156,81 @@
 
 }
 
-.flex-container-other-project>div>div>div>div>div>span{
+.flex-container-other-project>div>div>div>div>div>span {
     margin-left: 2px;
     margin-right: 2px;
     font-weight: 600;
     font-size: small;
-    
+
 }
 
-.flex-container-other-project>div>div>div>div>div{
+.flex-container-other-project>div>div>div>div>div {
     margin-top: 5px;
 }
+
 .flex-container-other-project>div>div>div>div {
     margin-bottom: 15px;
 }
 
-.flex-container-other-project>div>div>div>div >img{
-   
+.flex-container-other-project>div>div>div>div>img {
+
     height: 15px;
     width: 15px;
 
 }
-.flex-container-other-project>div>div>div>div >Link>img{
-   
+
+.flex-container-other-project>div>div>div>div>Link>img {
+
     height: 15px;
     width: 15px;
 
 }
+
 /* other project end */
 /* view more */
-#project-viewmore-button{
+#project-viewmore-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
 
-    
+
+
+
 }
-#project-viewmore-button>span{
+
+#project-viewmore-button>span {
     align-items: center;
     justify-content: center;
     width: auto;
     height: 100%;
     display: flex;
-    cursor: pointer; 
+    cursor: pointer;
     background-color: rgb(245, 245, 245);
     border: 1.5px solid rgb(193, 186, 186);
     border-radius: 10px;
     width: auto;
-    
+
 }
 
-#project-viewmore-button>span>img{
+#project-viewmore-button>span>img {
     width: 30px;
     align-items: center;
     justify-items: center;
     margin-left: 8px;
-    margin-right: 6px; 
+    margin-right: 6px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-#project-viewmore-button>span>div{
-   
+
+#project-viewmore-button>span>div {
+
     align-items: center;
     justify-items: center;
     margin-right: 8px;
-    font-weight:500;
-    
+    font-weight: 500;
+
 }
+
 /* view more end */
 
 /* project end */

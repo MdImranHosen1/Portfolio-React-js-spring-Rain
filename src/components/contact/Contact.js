@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './contact.css'
+import { ContactMe } from './ContactMe';
 export const Contact = () => {
 
   const [show, setShow] = useState(false);
@@ -25,29 +26,7 @@ export const Contact = () => {
       suscipit.
     </p>
     <div Style="margin-top: 30px; margin-bottom: 60px">
-      {show&& <form className="contact-write-messege-form">
-        <label>Messege</label>
-        <textarea
-          placeholder="Your message."
-          id="contact-send-messege"
-          required
-        ></textarea>
-        <label>Email</label>
-        <input
-          type="email"
-          placeholder="Your email."
-          id="contact-send-email"
-          required
-        />
-        <label>Country</label>
-        <select required id="contact-send-country">
-          <option>Bangladesh</option>
-          <option>India</option>
-          <option>Pakistan</option>
-          <option>Japan</option>
-          <option>Nepal</option>
-        </select>
-      </form>}
+      {show&& <ContactMe/>}
 
       <span
         onClick={toggleWriteMessage}
