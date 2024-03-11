@@ -38,7 +38,9 @@ export const SmallHeader = () => {
                 <span onClick={() => scrollToSection("about")}>About</span>
                 <span onClick={() => scrollToSection("experience")}>Experience</span>
                 <span onClick={() => scrollToSection("project")}>Project</span>
+                <span onClick={() => scrollToSection("recommendation")}>Recommendation</span>
                 <span onClick={() => scrollToSection("contact")}>Contact</span>
+                
                 <span><Link to="#">Resume</Link></span>
                 <span><Link to="#">Hire me</Link></span>
             </div>}

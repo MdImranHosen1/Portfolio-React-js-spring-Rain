@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './contact.css'
 import { ContactMe } from './ContactMe';
+import github from '../../assets/images/githublogo.png'
+import linkedin from '../../assets/images/linkedin.png'
+
 export const Contact = () => {
 
   const [show, setShow] = useState(false);
@@ -39,13 +42,13 @@ export const Contact = () => {
         href="https://github.com/MdImranHosen1"
         target="_blank"
         rel="noopener"
-        ><img src="./images/githublogo.png" alt=''/>
+        ><img src={github} alt=''/>
       </Link>
       <Link
         href="https://www.linkedin.com/in/md-imran-hosen19/"
         target="_blank"
         rel="noopener"
-        ><img src="./images/linkedin.png" alt=''/>
+        ><img src={linkedin} alt=''/>
       </Link>
     </div>
     <p>Imran Hosen - 2023</p>

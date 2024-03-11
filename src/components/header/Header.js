@@ -3,11 +3,7 @@ import logo from '../../assets/images/house.png'
 import './header.css'
 import { SmallHeader } from './SmallHeader';
 import { useState, useEffect } from 'react';
-import { Introduction } from './../introduction/Introduction';
-import { About } from './../about/About';
-import { AllProject } from './../allProject/AllProject';
-import { Experience } from './../experience/Experience';
-import { Contact } from './../contact/Contact';
+import { Homepage } from '../homePage/Homepage';
 
 
 export const Header = () => {
@@ -15,7 +11,7 @@ export const Header = () => {
 
     const handleResize = () => {
         const w = window.innerWidth;
-        setSmallNav(w < 700);
+        setSmallNav(w < 800);
     };
 
     useEffect(() => {
@@ -55,8 +51,12 @@ export const Header = () => {
                             <Link onClick={() => scrollToSection("project")}>Project</Link>
                         </li>
                         <li className="nav-item">
+                        <Link onClick={() => scrollToSection("recommendation")}>Recommended</Link> 
+                        </li>
+                        <li className="nav-item">
                             <Link onClick={() => scrollToSection("contact")}>Contact</Link>
                         </li>
+                        
                     </ul>
 
                     <div className="navbar-2nd-div">
@@ -68,11 +68,7 @@ export const Header = () => {
                 </header>
             )}
 
-            <Introduction id="introduction" />
-            <About id="about" />
-            <Experience id="experience" />
-            <AllProject id="project" />
-            <Contact id="contact" />
+            <Homepage></Homepage>
         </>
     );
 };
