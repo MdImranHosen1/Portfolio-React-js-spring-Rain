@@ -32,7 +32,7 @@ export const Recommend = () => {
 
     return (
         <div id='recommendation' className='recommend-main-div'>
-            <div><h1>Recommendation</h1></div>
+            <div><h1>Recommended by</h1></div>
             <div className='recommend-card-div'>
                 {!users?<Loading></Loading>:users.map((user) => {
                     return <div key={user.id}><RecommendCard user={user} /></div>
