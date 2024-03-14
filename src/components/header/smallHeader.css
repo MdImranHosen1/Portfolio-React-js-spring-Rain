@@ -6,7 +6,8 @@
     background: #ededed;
     z-index: 10;
     font-size: 25px;
-    padding-top: 40px;
+    padding-top: 50px;
+    margin-top: 21px;
 }
 
 .sm-header>span{

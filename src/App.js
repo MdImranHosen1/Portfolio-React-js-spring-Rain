@@ -4,7 +4,7 @@ import { Header } from './components/header/Header';
 import { Introduction } from './pages/introduction/Introduction';
 import { Experience } from './pages/experience/Experience';
 import { AllProject } from './pages/allProject/AllProject';
-import { Recommend } from './pages/recommended/Recommend';
+import { Recommend } from './pages/fetchData/Recommend';
 import { Contact } from './pages/contact/Contact';
 import { About } from './pages/about/About';
 
