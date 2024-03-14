@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-React-js-spring-Rain/static/css/main.644284e6.css",
-    "main.js": "/Portfolio-React-js-spring-Rain/static/js/main.92b02ca4.js",
+    "main.js": "/Portfolio-React-js-spring-Rain/static/js/main.a33071b7.js",
     "static/media/firstproject.jpg": "/Portfolio-React-js-spring-Rain/static/media/firstproject.c62ac18b103b27f3005d.jpg",
     "static/media/secondproject.jpg": "/Portfolio-React-js-spring-Rain/static/media/secondproject.d1e8ecf2dfab429a7305.jpg",
     "static/media/imran.jpg": "/Portfolio-React-js-spring-Rain/static/media/imran.8425b063730573200b7c.jpg",
@@ -11,10 +11,10 @@
     "static/media/instagram.png": "/Portfolio-React-js-spring-Rain/static/media/instagram.24e05950f8bf10a8fd64.png",
     "index.html": "/Portfolio-React-js-spring-Rain/index.html",
     "main.644284e6.css.map": "/Portfolio-React-js-spring-Rain/static/css/main.644284e6.css.map",
-    "main.92b02ca4.js.map": "/Portfolio-React-js-spring-Rain/static/js/main.92b02ca4.js.map"
+    "main.a33071b7.js.map": "/Portfolio-React-js-spring-Rain/static/js/main.a33071b7.js.map"
   },
   "entrypoints": [
     "static/css/main.644284e6.css",
-    "static/js/main.92b02ca4.js"
+    "static/js/main.a33071b7.js"
   ]
 }
