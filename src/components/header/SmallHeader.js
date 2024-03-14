@@ -17,7 +17,7 @@ export const SmallHeader = () => {
         <>
             <header style={{ paddingRight: "5px", paddingLeft: "5px" }} id="flex-container-head-large" className="navbar-style">
                 <div>
-                    <Link to="/">
+                    <Link to="/Portfolio-React-js-spring-Rain">
                         <img height="30px" src={logo} alt="Homepage" />
                     </Link>
                 </div>
