@@ -1,0 +1,59 @@
+  
+.fetchQuote-main-div{
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 15%;
+  padding-right: 15%;
+  
+}
+.fetchQuote-card-div{
+ 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 20px; 
+}
+.fetchQuote-card-div>div>h4{
+  text-align: right;margin-top: 20px;
+}
+.fetchQuote-card-div>div>h5 {
+  text-align: right;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 700px) {
+  .fetchQuote-main-div{
+    
+    padding-left: 5%;
+    padding-right: 5%;
+    
+  }
+ 
+}
+  
+.show-fetchQuote-button-style {
+    display: flex;
+    border: 1.5px solid rgb(193, 186, 186);
+    border-radius: 5px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 5px;
+    margin: 20px;
+    font-size: medium;
+    cursor: pointer;
+    width: 200px;
+    margin: 5px auto
+
+    
+
+}
+  
+
+.show-fetchQuote-button-style:hover {
+  display: flex;
+  border: 1.5px solid rgb(151, 151, 151);
+  border-radius:8px;
+  transition: border-radius 1s;
+}

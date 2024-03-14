@@ -45,7 +45,7 @@ export const Header = () => {
                             <Link to='/project'>Project</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/recommended'>Recommended</Link>
+                            <Link to='/fetchQuote'>FetchQuote</Link>
                         </li>
                         <li className="nav-item">
                             <Link to='/contact'>Contact</Link>

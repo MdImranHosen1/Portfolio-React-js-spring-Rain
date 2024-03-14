@@ -21,7 +21,14 @@ export const SmallHeader = () => {
                         <img height="30px" src={logo} alt="Homepage" />
                     </Link>
                 </div>
-                <div>
+
+                <div style={{ display: "flex" }}>
+                    <div className="navbar-2nd-div" style={{ marginRight: "10px" }}>
+                        <div className="flex-container navbar-2nd-div-1st-div">
+                            <span className="button-style"><Link to="#">Resume</Link></span>
+                            <span className="button-style"><Link to="#">Hire Me</Link></span>
+                        </div>
+                    </div>
                     <Link onClick={handleClickMenu}>
                         <img height="30px" src={show ? close : menu} alt="Menu" />
                     </Link>
@@ -31,11 +38,10 @@ export const SmallHeader = () => {
                 <span ><Link onClick={handleClickMenu} to='about'>About</Link></span>
                 <span ><Link onClick={handleClickMenu} to='experience'>Experience</Link></span>
                 <span ><Link onClick={handleClickMenu} to='project'>Project</Link></span>
-                <span ><Link onClick={handleClickMenu} to='recommended'>Recommended</Link></span>
+                <span ><Link onClick={handleClickMenu} to='fetchQuote'>FetchQuote</Link></span>
                 <span ><Link onClick={handleClickMenu} to='contact'>Contact</Link></span>
 
-                <span><Link to="#">Resume</Link></span>
-                <span><Link to="#">Hire me</Link></span>
+
             </div>}
         </>
     );
