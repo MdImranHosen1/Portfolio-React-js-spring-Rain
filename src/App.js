@@ -22,7 +22,7 @@ function App() {
           <Route path='project' element={<AllProject />} />
           <Route path='recommended' element={<Recommend />} />
           <Route path='contact' element={<Contact />} />
-          <Route path='*' element={<Experience />} />
+          <Route path='*' element={<Introduction />} />
 
         </Routes>
 
