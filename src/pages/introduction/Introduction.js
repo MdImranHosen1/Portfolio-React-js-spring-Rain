@@ -1,6 +1,7 @@
 import React from 'react'
 import down from './../../assets/images/downarrow.png'
 import './introduction.css'
+import { Link } from 'react-router-dom'
 
 export const Introduction = () => {
   return (
@@ -12,7 +13,7 @@ export const Introduction = () => {
         challenges and learn new technologies.
       </div>
       <div id="introduction-logo-style">
-        <a href="#about"><img src={down} alt=''/></a>
+        <Link to="/about"><img src={down} alt='' /></Link>
       </div>
     </div>
 

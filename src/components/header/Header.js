@@ -3,7 +3,6 @@ import logo from '../../assets/images/house.png'
 import './header.css'
 import { SmallHeader } from './SmallHeader';
 import { useState, useEffect } from 'react';
-import { Homepage } from '../homePage/Homepage';
 
 
 export const Header = () => {
@@ -15,19 +14,14 @@ export const Header = () => {
     };
 
     useEffect(() => {
-        handleResize(); 
+        handleResize();
         window.addEventListener('resize', handleResize);
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, []); 
+    }, []);
 
-    const scrollToSection = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
+
 
     return (
         <>
@@ -35,28 +29,28 @@ export const Header = () => {
             {!smallNav && (
                 <header id="flex-container-head-large" className="navbar-style">
                     <div>
-                        <Link to="Portfolio-React-js-spring-Rain/">
+                        <Link to="/">
                             <img height="30px" src={logo} alt="Homepage" />
                         </Link>
                     </div>
 
                     <ul className="flex-container">
                         <li className="nav-item">
-                            <Link onClick={() => scrollToSection("about")}>About</Link>
+                            <Link to='/about'>About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link onClick={() => scrollToSection("experience")}>Experience</Link>
+                            <Link to='/experience'>Experience</Link>
                         </li>
                         <li className="nav-item">
-                            <Link onClick={() => scrollToSection("project")}>Project</Link>
+                            <Link to='/project'>Project</Link>
                         </li>
                         <li className="nav-item">
-                        <Link onClick={() => scrollToSection("recommendation")}>Recommended</Link> 
+                            <Link to='/recommended'>Recommended</Link>
                         </li>
                         <li className="nav-item">
-                            <Link onClick={() => scrollToSection("contact")}>Contact</Link>
+                            <Link to='/contact'>Contact</Link>
                         </li>
-                        
+
                     </ul>
 
                     <div className="navbar-2nd-div">
@@ -68,7 +62,6 @@ export const Header = () => {
                 </header>
             )}
 
-            <Homepage></Homepage>
         </>
     );
 };

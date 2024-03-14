@@ -8,13 +8,6 @@ import close from '../../assets/images/delete-cross.png';
 export const SmallHeader = () => {
     const [show, setShow] = useState(false);
 
-    const scrollToSection = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-            setShow(false); // Hide the menu after clicking on a link
-        }
-    };
 
     function handleClickMenu() {
         setShow(!show); // Toggle show state
@@ -24,7 +17,7 @@ export const SmallHeader = () => {
         <>
             <header style={{ paddingRight: "5px", paddingLeft: "5px" }} id="flex-container-head-large" className="navbar-style">
                 <div>
-                    <Link to="Portfolio-React-js-spring-Rain/">
+                    <Link to="/">
                         <img height="30px" src={logo} alt="Homepage" />
                     </Link>
                 </div>
@@ -35,12 +28,12 @@ export const SmallHeader = () => {
                 </div>
             </header>
             {show && <div className='sm-header'>
-                <span onClick={() => scrollToSection("about")}>About</span>
-                <span onClick={() => scrollToSection("experience")}>Experience</span>
-                <span onClick={() => scrollToSection("project")}>Project</span>
-                <span onClick={() => scrollToSection("recommendation")}>Recommended</span>
-                <span onClick={() => scrollToSection("contact")}>Contact</span>
-                
+                <span ><Link to='about'>About</Link></span>
+                <span ><Link to='experience'>Experience</Link></span>
+                <span ><Link to='project'>Project</Link></span>
+                <span ><Link to='recommended'>Recommended</Link></span>
+                <span ><Link to='contact'>Contact</Link></span>
+
                 <span><Link to="#">Resume</Link></span>
                 <span><Link to="#">Hire me</Link></span>
             </div>}
