@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-React-js-spring-Rain/static/css/main.c28de151.css",
-    "main.js": "/Portfolio-React-js-spring-Rain/static/js/main.8cc4280b.js",
+    "main.css": "/Portfolio-React-js-spring-Rain/static/css/main.31b50e7e.css",
+    "main.js": "/Portfolio-React-js-spring-Rain/static/js/main.2c780cd5.js",
     "static/media/firstproject.jpg": "/Portfolio-React-js-spring-Rain/static/media/firstproject.c62ac18b103b27f3005d.jpg",
     "static/media/secondproject.jpg": "/Portfolio-React-js-spring-Rain/static/media/secondproject.d1e8ecf2dfab429a7305.jpg",
     "static/media/imran.jpg": "/Portfolio-React-js-spring-Rain/static/media/imran.8425b063730573200b7c.jpg",
@@ -10,11 +10,11 @@
     "static/media/calculator.png": "/Portfolio-React-js-spring-Rain/static/media/calculator.affe28dad37ebce53fde.png",
     "static/media/instagram.png": "/Portfolio-React-js-spring-Rain/static/media/instagram.24e05950f8bf10a8fd64.png",
     "index.html": "/Portfolio-React-js-spring-Rain/index.html",
-    "main.c28de151.css.map": "/Portfolio-React-js-spring-Rain/static/css/main.c28de151.css.map",
-    "main.8cc4280b.js.map": "/Portfolio-React-js-spring-Rain/static/js/main.8cc4280b.js.map"
+    "main.31b50e7e.css.map": "/Portfolio-React-js-spring-Rain/static/css/main.31b50e7e.css.map",
+    "main.2c780cd5.js.map": "/Portfolio-React-js-spring-Rain/static/js/main.2c780cd5.js.map"
   },
   "entrypoints": [
-    "static/css/main.c28de151.css",
-    "static/js/main.8cc4280b.js"
+    "static/css/main.31b50e7e.css",
+    "static/js/main.2c780cd5.js"
   ]
 }
