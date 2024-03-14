@@ -28,11 +28,11 @@ export const SmallHeader = () => {
                 </div>
             </header>
             {show && <div className='sm-header'>
-                <span ><Link to='about'>About</Link></span>
-                <span ><Link to='experience'>Experience</Link></span>
-                <span ><Link to='project'>Project</Link></span>
-                <span ><Link to='recommended'>Recommended</Link></span>
-                <span ><Link to='contact'>Contact</Link></span>
+                <span ><Link onClick={handleClickMenu} to='about'>About</Link></span>
+                <span ><Link onClick={handleClickMenu} to='experience'>Experience</Link></span>
+                <span ><Link onClick={handleClickMenu} to='project'>Project</Link></span>
+                <span ><Link onClick={handleClickMenu} to='recommended'>Recommended</Link></span>
+                <span ><Link onClick={handleClickMenu} to='contact'>Contact</Link></span>
 
                 <span><Link to="#">Resume</Link></span>
                 <span><Link to="#">Hire me</Link></span>
